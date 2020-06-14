@@ -27,10 +27,12 @@ This python script provides the necessary code to perform facial recognition on 
 
 ## Notes
 
-The program uses "hog" (Histogram of Oriented Gradients) by default to perform facial recognition.
-But, if your system has a GPU support you can use the "cnn" (Convolutional Neural Network) model to do the same.
+1. The program uses "hog" (Histogram of Oriented Gradients) by default to perform facial recognition.
+But, if your system has GPU support you can use the "cnn" (Convolutional Neural Network) model to do the same.
 
-The folder containing user images should be structured as below:
+2. Take a look at the `requirement.txt` file for the required libraries and dependencies.
+
+3. The folder containing user images should be structured as below:
 
 ```
 User_Faces/
