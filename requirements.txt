@@ -1,0 +1,8 @@
+Libraries required:-
+	-- os
+	-- cv2
+	-- time
+	-- argparse
+	-- face_recognition
+
+The code was developed using the PyCharm IDE.
