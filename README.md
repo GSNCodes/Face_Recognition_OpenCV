@@ -7,11 +7,12 @@ This python script provides the necessary code to perform facial recognition on 
 
 ## Arguments
 ```
--v/--video  ---->  Path to video file  
--u/--users  ---->  Path to user images  
--i/--image  ---->  Path to the folder containing test images  
--c/--camera ---->  To use the live feed from web-cam  
--m/--model  ---->  Choose the model to use, choices=['hog', 'cnn']  
+-v/--video     ---->  Path to video file  
+-u/--users     ---->  Path to user images  
+-i/--image     ---->  Path to the folder containing test images  
+-c/--camera    ---->  To use the live feed from web-cam  
+-m/--model     ---->  Choose the model to use, choices=['hog', 'cnn']
+-t/--tolerance ---->  Tolerance value for the model
 ```
 
 ## Usage
