@@ -26,6 +26,11 @@ This python script provides the necessary code to perform facial recognition on 
 * For testing on a video file  
 `python face_recognition.py --users <path to the folder containing user images> --camera False --video <path to the video file>`
 
+
+## Sample Output
+
+<img src ='sample_output/output_1.png' width = 500>          <img src ='sample_output/output_2.png' width = 400>
+
 ## Notes
 
 1. The program uses "hog" (Histogram of Oriented Gradients) by default to perform facial recognition.
