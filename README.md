@@ -54,7 +54,7 @@ User_Faces/
         .
 ```
 
-## Future updates
+## Future Updates
 1. To add option to save images and videos to the desired path.
 
 2. Employ voting mechanism to decide best match.
