@@ -53,3 +53,13 @@ User_Faces/
         .
         .
 ```
+
+## Future updates
+1. To add option to save images and videos to the desired path.
+
+2. Employ voting mechanism to decide best match.
+
+
+If you have any queries, feel free to ask them. I'll do my best to answer. :)
+
+Happy Learning People ! Keep chasing your dreams ! ⭐️
