@@ -37,7 +37,7 @@ def face_from_video(video, known_faces, known_names):
             break
 
 ## Image files
-def face_from_images(TEST_FACES_DIR, known_faces, known_names):
+def face_from_images(TEST_FACES_DIR, known_faces, known_names,save_img):
 
     for filename in os.listdir(TEST_FACES_DIR):
         image = face_recognition.load_image_file(f"{TEST_FACES_DIR}/{filename}")
@@ -67,6 +67,8 @@ def face_from_images(TEST_FACES_DIR, known_faces, known_names):
                 cv2.putText(image, match, (face_location[3] + 10, face_location[2] + 15), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), FONT_THICKNESS)
 
         cv2.imshow(filename, image)
+        if save_img:
+            cv2.imwrite(f"Output_{filename}.png",image)
         cv2.waitKey(0)
         cv2.destroyAllWindows()
 
@@ -80,6 +82,7 @@ if __name__ == '__main__':
     ap.add_argument('-c', '--camera', help='To use the live feed from web-cam', default=True)
     ap.add_argument('-m', '--model', help='Choose the model to use', choices=['hog', 'cnn'], default='hog')
     ap.add_argument('-t', '--tolerance', help='Tolerance value for the model', default=0.6)
+    ap.add_argument('-s', '--save_img', help='To save the output image', type=bool, default=False)
     args = vars(ap.parse_args())
 
     ## Constants under use
@@ -115,4 +118,5 @@ if __name__ == '__main__':
 
     if args["image"]:
         TEST_FACES_DIR = args["image"]
-        face_from_images(TEST_FACES_DIR, known_faces, known_names)
+        save_img = args["save_img"]
+        face_from_images(TEST_FACES_DIR, known_faces, known_names,save_img)
