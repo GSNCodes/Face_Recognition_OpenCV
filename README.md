@@ -13,6 +13,7 @@ This python script provides the necessary code to perform facial recognition on 
 -c/--camera    ---->  To use the live feed from web-cam  
 -m/--model     ---->  Choose the model to use, choices=['hog', 'cnn']
 -t/--tolerance ---->  Tolerance value for the model
+-s/--save_img  ---->  To save the output image
 ```
 
 ## Usage
@@ -21,7 +22,7 @@ This python script provides the necessary code to perform facial recognition on 
 `python face_recognition.py --users <path to the folder containing user images>`
 
 * For testing on images in a folder  
-`python face_recognition.py --users <path to the folder containing user images> --camera False --images <path to the folder containing test images>`
+`python face_recognition.py --users <path to the folder containing user images> --camera False --image <path to the folder containing test images>`
 
 * For testing on a video file  
 `python face_recognition.py --users <path to the folder containing user images> --camera False --video <path to the video file>`
@@ -55,7 +56,7 @@ User_Faces/
 ```
 
 ## Future Updates
-1. To add option to save images and videos to the desired path.
+1. ~~To add option to save images to the desired path.~~
 
 2. Employ voting mechanism to decide best match.
 
